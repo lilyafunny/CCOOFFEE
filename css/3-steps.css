@@ -84,8 +84,8 @@
   flex-shrink: 0;
   text-align: center;
   border-radius: 50%;
-  background-color: #a1c487;
-  color: #141414;
+background-color: var(--main-text-color-step);
+  color: var(--main-text-color);
   font-weight: bold;
   margin-right: 30px;
   padding-bottom: 20px;
@@ -122,8 +122,8 @@
   .easysteps {
     padding: 0 32px;
   }
-  .conteiner1 {
-    flex-direction: row;
+  .easysteps-conteiner-content {
+        width: 247px;
   }
   .conteiner1 {
     position: relative;
@@ -212,6 +212,9 @@
   .easysteps-list li {
     padding-left: 56px;
     padding-bottom: 20px;
+  }
+  .conteiner1{
+    flex-direction: row;
   }
   .conteiner2 {
     padding-left: 110px;

@@ -183,15 +183,7 @@
 
 @media (min-width: 427px) {
     .img-women-positione {
-        display: flex;
-        top: 60px;
-        left: 62px;
-        right: 62px;
-        bottom: 60px;
-        background-size: 45px 39px;
-        padding-top: 40px;
-        padding-bottom: 0px;
-        border-radius: 60px;
+      
     }
 }
 
@@ -244,7 +236,7 @@
         height: 463px;
         justify-content: center;
         margin-top: 100px;
-        max-width: 704px;
+        max-width: 551px;
         max-height: 463px;
     }
 
@@ -303,15 +295,7 @@
     }
 
     .img-women-positione {
-        display: flex;
-        top: 60px;
-        left: 62px;
-        right: 62px;
-        bottom: 60px;
-        background-size: 42px 40px;
-        padding-top: 40px;
-        padding-bottom: 0px;
-        border-radius: 60px;
+        max-height: 551px;
     }
 
     .text-part {
