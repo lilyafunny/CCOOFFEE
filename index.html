@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>CCOOFFEE</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-container">
+        <nav class="header-menu">
+          <ul class="menu-list list">
+            <li>
+              <a href="#how-it-works" class="menu-list-link link"
+                >Як ми працюємо</a
+              >
+            </li>
+            <li>
+              <a href="#organic-vegetables" class="menu-list-link link"
+                >Кавуся</a
+              >
+            </li>
+            <li>
+              <a href="#footer" class="menu-list-link link">Контакти</a>
+            </li>
+          </ul>
+
+          <a href="./index.html" class="logo link">
+            <span>
+              <svg class="logo-icon" width="16" height="16">
+                <use href="/img/icons.svg#icon-logo"></use>
+              </svg>
+            </span>
+            CCOOFFEE
+          </a>
+        </nav>
+        <button type="button" class="header-menu-order" data-modal-open1>
+          <svg width="20" height="20">
+            <use href="/img/icons.svg#icon-shoppcart"></use>
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          class="header-open-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="24" height="24">
+            <use href="/img/icons.svg#icon-openmob"></use>
+          </svg>
+        </button>
+      </div>
+<!-- -->
+      <div class="wrap-content-img">
+            <picture>
+              <img
+                class="girl-img"
+                src="./img/pngwing11.png"
+                alt="girl-in-circle"
+                width="563"
+                height="640"
+              />
+            </picture>
+          </div>
+          
+
+
+      <div class="mob-menu js-menu-container" id="mobile-menu">
+        <div class="header-container">
+          <a href="./index.html" class="logo link">
+            <span>
+              <svg class="logo-icon" width="16" height="16">
+                <use href="/img/icons.svg#icon-logo"></use>
+              </svg>
+            </span>
+            CCOOFFEE
+          </a>
+
+          <button type="button" class="mobile-menu-close js-close-menu">
+            <svg class="mobile-menu-close-icon" width="24" height="24">
+              <use href="/img/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="mobile-menu-list list js-close-menu1">
+          <li>
+            <a href="#how-it-works" class="mobile-menu-list-link link"
+              >Як ми працюємо</a
+            >
+          </li>
+          <li>
+            <a href="#organic-vegetables" class="mobile-menu-list-link link"
+              >Кавуся</a
+            >
+          </li>
+          <li>
+            <a href="#footer" class="mobile-menu-list-link link">Контакти</a>
+          </li>
+          <li>
+            <button type="button" class="mobile-menu-order" data-modal-open>
+              <svg width="20" height="20">
+                <use href="/img/icons.svg#icon-shoppcart"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero">
+      <di class="container-hero">
+        <div class="avatar-hero-wrap">
+          <ul class="avatar-list list">
+            <li class="item-avatar">
+              <div class="div-circle-avatar">
+                <!-- FIRST_AVATAR -->
+                <picture class="avatars">
+                  <source
+                    srcset="
+                      ./img/block-des-1-1x.jpg 1x,
+                      ./img/block-des-1-2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/block-tab-1-1x.jpg 1x,
+                      ./img/block-tab-1-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/block-mob-1-1x.jpg 1x,
+                      ./img/block-mob-1-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatars"
+                    src="./img/block-mob-1-1x.jpg"
+                    alt="girl"
+                    width="40"
+                    height="40"
+                  />
+                </picture>
+              </div>
+            </li>
+            <!-- SECOND_AVATAR -->
+            <li class="item-avatar">
+              <div class="div-circle-avatar">
+                <picture class="avatars">
+                  <source
+                    srcset="
+                      ./img/block-des-2-1x.jpg 1x,
+                      ./img/block-des-2-2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/block-tab-2-1x.jpg 1x,
+                      ./img/block-tab-2-1x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/block-mob-2-1x.jpg 1x,
+                      ./img/block-mob-2-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatars"
+                    src="./img/block-mob-2-1x.jpg"
+                    alt="boy"
+                    width="40"
+                    height="40"
+                  />
+                </picture>
+              </div>
+            </li>
+            <!-- THIRD_AVATAR -->
+            <li class="item-avatar">
+              <div class="div-circle-avatar">
+                <picture class="">
+                  <source
+                    srcset="
+                      ./img/block-des-3-1x.jpg 1x,
+                      ./img/block-des-3-1x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/block-tab-3-1x.jpg 1x,
+                      ./img/block-tab-3-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/block-mob-3-1x.jpg 1x,
+                      ./img/block-mob-3-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="avatars"
+                    src="./img/block-mob-3-1x.jpg"
+                    alt="girl"
+                    width="40"
+                    height="40"
+                  />
+                </picture>
+              </div>
+            </li>
+            <li class="item-avatar">
+              <div class="div-circle-avatar">
+                <h1 class="reviws-title">2k</h1>
+                <p class="reviws-text">reviews</p>
+              </div>
+            </li>
+          </ul>
+          <!-- HERO_MAIN_TEXT_BTN -->
+          <h1 class="hero-title">Кавуся для твоєї творчої душі</h1>
+          <p class="hero-subheading">
+            Працюємо для вашого хорошого настрою. Ми обіцяємо, що наш вибір кави
+            вас приємно здивує. Замовляйте секретні бокси та насолоджуйтеся
+            різноманіттям смаків та ароматів
+          </p>
+          <button type="button" class="btn-shop-now" data-modal-open2>
+            shop <br />now
+          </button>
+        </div>
+
+        <!-- HERO_CONTANT_IMG -->
+        
+          <!-- SECTION_MAIN_HASHTAGS -->
+          <div class="hashteg-div">
+            <ul class="hero-teg-list list">
+              <li class="hero-teg-item">
+                <button type="button" class="hero-teg-btn current">
+                  #organic
+                </button>
+              </li>
+              <li class="hero-teg-item">
+                <button type="button" class="hero-teg-btn">#products</button>
+              </li>
+              <li class="hero-teg-item">
+                <button type="button" class="hero-teg-btn">#basket</button>
+              </li>
+              <li class="hero-teg-item">
+                <button type="button" class="hero-teg-btn">#vegetables</button>
+              </li>
+            </ul>
+          </div>
+        
+      </div>
+    </section>
+    <section class="broccoli-section" id="how-it-works">
+      <h2 class="section-title">
+        Як замовити секретний бокс з найсмачнішою кавуською
+      </h2>
+      <div class="broccoli-img">
+        <picture class="broccoli">
+          <img src="./img/pngwing12.png" alt="Fresh Broccoli" />
+        </picture>
+      </div>
+      <div class="text-block">
+        <p class="section-text-first">
+          Ви можете ознайомитися з усім асортиментом кави який в нас є, але при
+          замовленні, ви не дізнаєтеся що саме ми вам доставимо
+        </p>
+        <p class="section-text-second">
+          Таким чином, ми допоможемо вам поринути у світ кави, розкрити всі
+          секрети цього дивовижного напою
+        </p>
+      </div>
+    </section>
+    <section class="easysteps">
+      <div class="conteiner1">
+        <div class="conteiner2">
+          <div class="easysteps-conteiner">
+            <h2 class="easysteps-title">
+              3 простих кроки, щоб навіть не злізати з ліжечка
+            </h2>
+
+            <ol class="easysteps-list">
+              <li>
+                <div class="easysteps-marker"></div>
+                <span class="easysteps-text">
+                  Оберіть рівень міцності кавусі : легкий, міцний та мікс
+                </span>
+              </li>
+              <li>
+                <div class="easysteps-marker"></div>
+                <span class="easysteps-text">
+                  Натисніть на кошик і заповніть форму. Зовсім скоро станеться
+                  чудо</span
+                >
+              </li>
+              <li>
+                <div class="easysteps-marker"></div>
+                <span class="easysteps-text">
+                  Сядьте зручніше і розслабтеся! Ваша кавуся вже спішить до вас
+                </span>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="easysteps-conteiner-content">
+          <h2 class="easysteps-title">
+            3 простих кроки, щоб замовити кавусю своєї мрії
+          </h2>
+
+          <ol class="easysteps-list">
+            <li>
+              <div class="easysteps-marker"></div>
+              <span class="easysteps-text">
+                Виберіть кавусю, яку б ви хотіли замовити або запитайте наших
+                працівників
+              </span>
+            </li>
+            <li>
+              <div class="easysteps-marker"></div>
+              <span class="easysteps-text">
+                Оберіть собі найкращій столик. Зовсім скоро станеться чудо
+              </span>
+            </li>
+            <li>
+              <div class="easysteps-marker"></div>
+              <span class="easysteps-text">
+                Сядьте зручніше і розслабтеся! Ваша кавуся вже спішить до вас
+              </span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section class="organic-vegetables">
+      <div class="container-veg">
+        <h2 id="organic-vegetables" class="second-title-vegetables">
+          Найсмачніша кавуська
+        </h2>
+        <p class="paragraph-vegetables">
+          Кавові зерна збираються вручну з ферм і доставляються прямо до вашого
+          порогу, гарантуючи, що ви отримаєте найякісніший продукт
+        </p>
+        <ul class="vegetables-list">
+          <li class="vegetables-cards-items">
+            <h3 class="card-title">Арабіка</h3>
+            <p class="card-paragraph">Кава</p>
+            <img
+              class="img-card"
+              src="./img/image1.png"
+              alt="Cup of coffee"
+              width="321"
+              height="261"
+            />    
+
+            <p class="cards-price">100 UAH / kg</p>
+          </li>
+          <li class="vegetables-cards-items">
+            <h3 class="card-title">Робуста</h3>
+            <p class="card-paragraph">Кава</p>
+            <img
+              class="img-card"
+              src="./img/image2.png"
+              alt="Cup of coffee"
+              width="321"
+              height="261"
+            />
+            
+            <p class="cards-price">80 UAH / kg</p>
+          </li>
+          <li class="vegetables-cards-items">
+            <h3 class="card-title">Ефіопія</h3>
+            <p class="card-paragraph">Кава</p>
+            <img
+              class="img-card"
+              src="./img/image3.png"
+              alt="Cup of coffee"
+              width="321"
+              height="261"
+            />
+            <p class="cards-price">40 UAH / kg</p>
+          </li>
+          <li class="vegetables-cards-items">
+            <h3 class="card-title">Ліберіка</h3>
+            <p class="card-paragraph">Кава</p>
+            <img
+              class="img-card"
+              src="./img/image4.png"
+              alt="Cup of coffee"
+              width="321"
+              height="261"
+            />
+            <p class="cards-price">60 UAH / kg</p>
+          </li>
+          <li class="vegetables-cards-items">
+            <h3 class="card-title">Руанда</h3>
+            <p class="card-paragraph">Кава</p>
+            <img
+              class="img-card"
+              src="./img/image5.png"
+              alt="Cup of coffee"
+              width="321"
+              height="261"
+            />
+            <p class="cards-price">80 UAH / kg</p>
+          </li>
+          <li class="vegetables-cards-items">
+            <h3 class="card-title">Кава по-турецьки</h3>
+            <p class="card-paragraph">Кава</p>
+            <img
+              class="img-card"
+              src="./img/image6.png"
+              alt="Cup of coffee"
+              width="321"
+              height="261"
+            />
+            <p class="cards-price">50 UAH / kg</p>
+          </li>
+          <li class="vegetables-cards-items">
+            <h3 class="card-title">Колумбія</h3>
+            <p class="card-paragraph">Кава</p>
+            <img
+              class="img-card"
+              src="./img/image7.png"
+            alt="Cup of coffee"
+              width="321"
+              height="261"
+            />
+            <p class="cards-price">40 UAH / kg</p>
+          </li>
+          <li class="vegetables-cards-items">
+            <h3 class="card-title">Типики</h3>
+            <p class="card-paragraph">Кава</p>
+            <img
+              class="img-card"
+              src="./img/image8.png"
+               alt="Cup of coffee"
+              width="321"
+              height="261"
+            />
+            <p class="cards-price">60 UAH / kg</p>
+          </li>
+          <li class="vegetables-cards-items">
+            <h3 class="card-title">Бурбон</h3>
+            <p class="card-paragraph">Кава</p>
+            <img
+              class="img-card"
+              src="/img/image9.png"
+               alt="Cup of coffee"
+              width="321"
+              height="261"
+            />
+            <p class="cards-price">90 UAH / kg</p>
+          </li>
+        </ul>
+        <button type="button" class="order-button" data-modal-open3>
+          order
+          <svg class="svg-btn-order" width="14" height="14">
+            <use href="./img/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="we-will-call-you">
+      <div class="section-form-title">
+        <div class="text-part">
+          <h2 class="title-text">Наше фірмове, екологічне пакування</h2>
+          <p class="paragraph-text">
+            Наші коробки наповнені найароматнішими зернами, ідеальними для
+            кофеманів, або тих, хто тільки починає свій шлях у пізнаванні
+            кавового королівства. Замовте свою коробку сьогодні та почніть
+            насолоджуватися найкращим, що може запропонувати природа!
+          </p>
+        </div>
+        <form class="form-recall">
+          <label class="input-recall"></label>
+          <div class="input-button">
+            <input
+              name="recall"
+              type="tel"
+              placeholder="+380 ()"
+              class="recall"
+              pattern="^\+380\d{9}$"
+              required
+            />
+
+            <button class="button-recall" type="submit">Передзвоніть</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="positione-img">
+        <picture class="img-women-positione">
+          <source
+            media="(max-width: 1280px)"
+            srcset="./img/call-des-1-1x.png 1x, ./img/call-des-1-2x.png 2x"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="./img/call-des-1-1x.png 1x, ./img/call-des-1-2x.png 2x"
+          />
+          <source
+            srcset="./img/call-tab-1-1x.png 1x, ./img/call-tab-1-2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./img/call-tab-1-1x.png 1x, ./img/call-tab-1-2x.png 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="./img/call-tab-1-1x.png" alt="girl-vegetables" />
+        </picture>
+      </div>
+    </section>
+    <footer class="footer-section" id="footer">
+      <div class="footer-container">
+        <div class="footer-container-logo">
+          <div>
+            <img
+              class="footer-img"
+              srcset="./img/footer-mob-1-2x.png 2x"
+              src="./img/footer-mob-1-1x.png"
+              alt=""
+            />
+            <a class="footer-link-img" href="">
+              <svg width="16" height="16">
+                <use href="./img/icons.svg#icon-logo"></use>
+              </svg>
+              <span class="footer-logo">CCOOFFEE</span>
+            </a>
+          </div>
+          <div>
+            <ul class="footer-list-nav">
+              <li>
+                <a class="footer-link-nav" href="#how-it-works"
+                  >Як ми працюємо</a
+                >
+              </li>
+              <li>
+                <a class="footer-link-nav" href="#organic-vegetables">Кавуся</a>
+              </li>
+              <li>
+                <a class="footer-link-nav" href="#footer">Контакти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-container-icon">
+          <ul class="footer-list-icon">
+            <li>
+              <a class="footer-link-icon" href="https://uk-ua.facebook.com/">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-link-icon"
+                href="https://www.instagram.com/accounts/login/"
+              >
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link-icon" href="https://www.youtube.com/">
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <address>
+            <ul class="footer-list-contact">
+              <li class="footer-item-namer">
+                <a href="tel:+380684439426" class="footer-namber"
+                  >+380 (68) 443-94-26</a
+                >
+              </li>
+              <li class="footer-item-addres">
+                <a
+                  href="https://goo.gl/maps/kK7XscYirYSMWyyq5"
+                  class="footer-addres"
+                  >1678 S. Pioneer Road Salt Lake City UT 84104</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </footer>
+    <div class="section-form is-hidden" data-modal>
+      <div class="container-form" data-modal>
+        <button class="close-btn" data-modal-close>
+          <svg class="icon-close" width="24" height="24">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="title-form">Ваше замовлення</h2>
+
+        <ul class="form-list">
+          <li class="form-list-item">
+            <div class="checkbox-position">
+              <input
+                type="checkbox"
+                name="check-item"
+                id="check-item"
+                class="input-check is-hidden"
+                value="true"
+              />
+              <label for="check-item" class="check-text"
+                ><span class="label-span">
+                  <svg class="check-icon" width="10" height="10">
+                    <use href="./img/icons.svg#icon-checkbox"></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <p class="title-list-order">Легенький кошик</p>
+            <p class="plant">Кавуся</p>
+            <!-- width="94" height="78" -->
+            <picture class="img-plant">
+              <source
+                srcset="
+                  ./img/modal-des-1-1x.png 1x,
+                  ./img/modal-des-1-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/modal-tab-1-1x.png 1x,
+                  ./img/modal-tab-1-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/modal-mob-1-1x.png 1x,
+                  ./img/modal-mob-1-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./img/modal-des-1-1x.png"
+                alt="cabbage"
+                width="94"
+                height="78"
+                class="img-plant"
+              />
+            </picture>
+          </li>
+          <li class="form-list-item">
+            <div class="checkbox-position">
+              <input
+                type="checkbox"
+                name="check-item"
+                id="check-item-2"
+                class="input-check is-hidden"
+                value="true"
+              />
+              <label for="check-item-2" class="check-text"
+                ><span class="label-span">
+                  <svg class="check-icon" width="10" height="10">
+                    <use href="./img/icons.svg#icon-checkbox"></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <p class="title-list-order">Міцненький кошик</p>
+            <p class="plant">Кавуся</p>
+            <picture class="img-plant">
+              <source
+                srcset="
+                  ./img/modal-des-2-1x.png 1x,
+                  ./img/modal-des-2-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/modal-tab-2-1x.png 1x,
+                  ./img/modal-tab-2-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/modal-mob-2-1x.png 1x,
+                  ./img/modal-mob-2-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./img/modal-des-2-1x.png"
+                alt="tomato"
+                width="94"
+                height="78"
+                class="img-plant"
+              />
+            </picture>
+          </li>
+          <li class="form-list-item">
+            <div class="checkbox-position">
+              <input
+                type="checkbox"
+                name="check-item"
+                id="check-item-3"
+                class="input-check is-hidden"
+                value="true"
+              />
+              <label for="check-item-3" class="check-text"
+                ><span class="label-span">
+                  <svg class="check-icon" width="10" height="10">
+                    <use href="./img/icons.svg#icon-checkbox"></use>
+                  </svg>
+                </span>
+              </label>
+            </div>
+            <p class="title-list-order">Мікс кошик</p>
+            <p class="plant">Кавуся</p>
+            <picture class="img-plant">
+              <source
+                srcset="
+                  ./img/modal-des-3-1x.png 1x,
+                  ./img/modal-des-3-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/modal-tab-3-1x.png 1x,
+                  ./img/modal-tab-3-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/modal-mob-3-1x.png 1x,
+                  ./img/modal-mob-3-2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="./img/modal-des-3-1x.png"
+                alt="vegetables"
+                width="94"
+                height="78"
+                class="img-plant"
+              />
+            </picture>
+          </li>
+        </ul>
+        <div class="form-position">
+          <form class="order">
+            <input
+              type="text"
+              placeholder="Ім’я та прізвище... "
+              name="user-name"
+              class="modal-input"
+              pattern="^(\w\w+)\s(\w+)$"
+              id="user-name"
+              required
+            />
+            <input
+              type="text"
+              class="modal-input"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}"
+              placeholder="Електронна адреса..."
+            />
+            <input
+              type="text"
+              class="modal-input"
+              pattern="[0-9]{4}+\d\s\S[0-9]{4}+\d\s\S[0-9]{4}+\d\s\S[0-9]{4}"
+              placeholder="Адреса..."
+            />
+            <textarea
+              name="user-comments"
+              id="user-comments"
+              class="modal-input modal-textarea"
+              placeholder="Коментар..."
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <button type="submit" class="submit-btn">Відправити</button>
+            <img
+              src="./img/modal-des-tab-4-1x.png"
+              alt="girl with vegetables"
+              class="img-form-position"
+            />
+            <img
+              src="./img/modal-des-1x.png"
+              alt="girl with vegetables"
+              class="img-form-position-desk"
+              width="444"
+              height="413"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/mobile-menu.js"></script>
+    <script type="module" src="/modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+.broccoli-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 20px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-title {
+    font-size: 28px;
+    color: var(--main-text-color);
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+
+.broccoli {
+    width: 100%;
+    height: auto;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-text-first {
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.04em;
+}
+
+.section-text-second {
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.04em;
+}
+
+@media screen and (min-width: 375px) {
+    .broccoli-section {
+        max-width: 375px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .broccoli-section {
+        max-width: 768px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px 8px;
+        padding: 100px 32px;
+    }
+
+    .text-block {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .section-title {
+        width: 386px;
+        font-size: 40px;
+        line-height: 1.1;
+    }
+
+    .section-text-first {
+        font-size: 18px;
+        line-height: 1.33;
+        width: 317px;
+    }
+
+    .section-text-second {
+        font-size: 18px;
+        line-height: 1.33;
+        width: 279px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .broccoli-section {
+        max-width: 1280px;
+        padding: 124px 32px;
+        gap: 0;
+    }
+
+    .section-title {
+        width: 614px;
+        font-size: 48px;
+        line-height: 1.04;
+    }
+
+    .text-block {
+        gap: 40px;
+    }
+
+    .section-text-first {
+        width: 353px;
+    }
+
+    .section-text-second {
+        width: 294px;
+    }
+}

@@ -1,0 +1,231 @@
+
+
+.easysteps {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.conteiner1 {
+  display: flex;
+  width: 100%;
+  padding: 80px 20px;
+  justify-content: space-between;
+  align-items: center;
+  background: #FEF4EA;
+  
+  background-size: 45px 39px;
+  padding-bottom: 0px;
+  border-radius: 60px;
+}
+
+.easysteps-title {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--main-text-color-step);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.easysteps-text {
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  color: var(--main-text-color-step);
+}
+
+/*================= media ====================*/
+@media screen and (min-width: 375px) {
+  .easysteps {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .easysteps {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .easysteps {
+    max-width: 1280px;
+  }
+}
+/*================= M O B A I L ====================*/
+
+.conteiner1 {
+  flex-direction: column;
+}
+
+.easysteps-list {
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 0;
+}
+
+.easysteps-list li {
+  position: relative;
+  counter-increment: item;
+  padding-bottom: 25px;
+  padding-left: 55px;
+}
+
+.easysteps-list li::before {
+  content: counter(item);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 38px;
+  line-height: 38px;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #a1c487;
+  color: #141414;
+  font-weight: bold;
+  margin-right: 30px;
+  padding-bottom: 20px;
+}
+.easysteps-list li span {
+  display: inline;
+}
+.easysteps-list li .easysteps-marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.easysteps-list li .easysteps-marker::before {
+  content: counter(item);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.easysteps-list li span {
+  display: inline;
+  vertical-align: top;
+}
+
+/*================TABLET====================*/
+
+@media screen and (min-width: 768px) {
+  .easysteps {
+    padding: 0 32px;
+  }
+  .conteiner1 {
+    flex-direction: row;
+  }
+  .conteiner1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+  }
+  .easysteps-title {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.04em;
+  }
+  .conteiner2 {
+    overflow: hidden;
+    order: 2;
+    white-space: normal;
+    padding-left: 40px;
+  }
+  .easysteps-conteiner {
+    width: 274px;
+  }
+  .easysteps-list {
+    list-style-type: none;
+    counter-reset: item;
+    width: 274px;
+  }
+
+  .easysteps-list li {
+    list-style: none;
+    position: relative;
+    counter-increment: item;
+    padding-left: 56px;
+    padding-bottom: 20px;
+  }
+
+  .easysteps-list li::before {
+    content: counter(item);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 46px;
+    height: 44px;
+    line-height: 43px;
+    flex-shrink: 0;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--main-text-color-step);
+    color: var(--main-text-color);
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  .easysteps-list li span {
+    display: inline;
+    vertical-align: text-top;
+  }
+  .easysteps-list li .easysteps-marker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 46px;
+    height: 44px;
+    border-radius: 50%;
+  }
+
+  .easysteps-list li .easysteps-marker::before {
+    content: counter(item);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+/*================= D E S K T O P ====================*/
+@media screen and (min-width: 1280px) {
+  .easysteps {
+    padding: 0 32px;
+  }
+  .easysteps-title {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.04em;
+  }
+  .easysteps-list li {
+    padding-left: 56px;
+    padding-bottom: 20px;
+  }
+  .conteiner2 {
+    padding-left: 110px;
+  }
+  .easysteps-conteiner {
+    width: 512px;
+  }
+  .easysteps-list {
+    width: 349px;
+  }
+
+  .easysteps-conteiner-content{
+    width: 512px;
+  }
+
+
+}

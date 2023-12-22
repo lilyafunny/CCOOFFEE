@@ -1,0 +1,326 @@
+.we-will-call-you {
+    padding: 0 20px 80px;
+    margin: 0 auto;
+}
+
+.text-part {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: start;
+}
+
+.section-form-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+
+.title-text {
+    display: flex;
+    width: 323px;
+    flex-direction: column;
+    justify-content: center;
+    color: #FAF3E7;
+    text-align: center;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: -0.96px;
+    text-transform: uppercase;
+}
+
+
+.paragraph-text {
+    display: flex;
+    max-width: 321px;
+    flex-direction: column;
+    justify-content: center;
+    color: #FAF3E7;
+    text-align: center;
+    text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+}
+
+.recall {
+    color: #FAF3E7;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    border-radius: 100px;
+    border: 1px solid #FAF3E7;
+    background-color: inherit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-width: 300px;
+    max-width: 335px;
+    padding: 15px 24px;
+    position: relative;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.button-recall {
+    display: flex;
+    padding: 15px 35px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 100px;
+    background-color: #FAF3E7;
+    border: none;
+    color: #603813;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.button-recall:is(:hover, :focus){
+    background-color: #A68C73;
+    color: #FAF3E7;
+}
+
+
+.input-button {
+    position: relative;
+}
+
+.img-women-positione {
+    display: flex;
+    top: 60px;
+    left: 62px;
+    right: 62px;
+    bottom: 60px;
+    background-size: 45px 39px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    border-radius: 60px;
+    max-width: 335px;
+    max-height: 388px;
+}
+
+.positione-img {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+
+
+
+
+@media (min-width: 375px) {
+
+    .section-form-title {
+        gap: 40px;
+    }
+
+    .paragraph-text {
+        display: flex;
+        max-width: 321px;
+        flex-direction: column;
+        justify-content: center;
+        color: #FAF3E7;
+        text-align: center;
+        text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.28;
+        letter-spacing: -0.56px;
+    }
+
+    .recall {
+        width: 350px;
+    }
+
+    .text-button-recall {
+        color: #FAF3E7;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.28;
+        letter-spacing: -0.56px;
+        text-transform: capitalize;
+    }
+
+    .img-women-positione {
+        display: flex;
+        top: 60px;
+        left: 62px;
+        right: 62px;
+        bottom: 60px;
+        background-size: 45px 39px;
+        padding-top: 40px;
+        padding-bottom: 0px;
+        border-radius: 60px;
+    }
+}
+
+
+@media (min-width: 427px) {
+    .img-women-positione {
+        display: flex;
+        top: 60px;
+        left: 62px;
+        right: 62px;
+        bottom: 60px;
+        background-size: 45px 39px;
+        padding-top: 40px;
+        padding-bottom: 0px;
+        border-radius: 60px;
+    }
+}
+
+
+@media (min-width: 768px) {
+
+    .we-will-call-you {
+        padding-bottom: 173px;
+        padding-right: 32px;
+        padding-left: 32px;
+        max-width: 768px;
+    }
+
+    .title-text {
+        width: 524px;
+        font-size: 40px;
+        line-height: 1.1;
+        letter-spacing: -1.6px;
+    }
+
+    .paragraph-text {
+        display: flex;
+        max-width: 499px;
+        flex-direction: column;
+        color: #FAF3E7;
+        text-align: center;
+        text-shadow: 0 4px 70px rgba(0, 0, 0, 0.10);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.28;
+        letter-spacing: -0.72px;
+        margin: 0;
+    }
+
+    .form-recall {
+        width: 350px;
+        height: 48px;
+        flex-shrink: 0;
+    }
+
+    .positione-img {
+        display: flex;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .img-women-positione {
+        width: 704px;
+        height: 463px;
+        justify-content: center;
+        margin-top: 100px;
+        max-width: 704px;
+        max-height: 463px;
+    }
+
+    .text-part {
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+
+    .positione-img {
+        margin-top: unset;
+    }
+
+    .img-women-positione {
+        width: 525px;
+        height: 536px;
+        margin-top: unset;
+    }
+
+    .we-will-call-you {
+        display: flex;
+        padding-right: 32px;
+        padding-left: 32px;
+        align-items: center;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 77px;
+        max-width: 1280px;
+    }
+
+    .title-text {
+        width: 614px;
+        font-size: 48px;
+        letter-spacing: -1.92px;
+        text-align: start
+    }
+
+    .section-form-title {
+        display: flex;
+        gap: 80px;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .paragraph-text {
+        display: flex;
+        max-width: 523px;
+        text-align: start;
+        padding-bottom: 0;
+        margin: 0;
+        text-align: start;
+    }
+
+    .img-women-positione {
+        display: flex;
+        top: 60px;
+        left: 62px;
+        right: 62px;
+        bottom: 60px;
+        background-size: 42px 40px;
+        padding-top: 40px;
+        padding-bottom: 0px;
+        border-radius: 60px;
+    }
+
+    .text-part {
+        align-items: start;
+        gap: 40px;
+    }
+
+    .section-form-title {
+        max-width: 614px;
+        justify-content: start;
+    }
+}

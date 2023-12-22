@@ -1,0 +1,312 @@
+.section-form {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 20px;
+    transition: visibility 250ms ease-in-out, opacity 250ms ease-in-out;
+}
+
+.div-form.is-hidden .container-form {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.container-form {
+    overflow: auto;
+    padding: 20px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms ease-in-out;
+    min-width: 300px;
+    max-width: 335px;
+    height: inherit;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-background-color);
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.01), 0 0 18px rgba(0, 0, 0, 0.02), 0 0 36px rgba(0, 0, 0, 0.03), 0 0 71px rgba(0, 0, 0, 0.03), 0 0 130px rgba(0, 0, 0, 0.04), 0 0 223px rgba(0, 0, 0, 0.05);
+}
+
+.close-btn {
+    position: absolute;
+    right: 14px;
+    border: none;
+    background-color: transparent;
+}
+
+.icon-close:is(:hover, :focus){
+stroke: var(--first-background-color);
+}
+
+.icon-close {
+    stroke: #141414;
+transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title-form {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.form-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+
+.form-list-item {
+    background-color: var(--third-background-color);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px 30px 8px 20px;
+    position: relative;
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+ .form-list-item:is(:hover, :focus) {
+     transform: scale(1.05);
+     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+         0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+         0 12.5px 10px rgba(0, 0, 0, 0.06),
+         0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+         0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+         0 100px 80px rgba(0, 0, 0, 0.12);
+ }
+
+.title-list-order {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+}
+
+.plant {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.28px;
+}
+
+.img-plant {
+    position: static;
+    margin-left: auto;
+    bottom: 8px;
+    right: 30px;
+}
+
+
+
+.checkbox-position {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.input-check:checked+.check-text .check-icon {
+    fill: #A1C487;
+}
+
+.check-text {
+    border: solid #A1C487 2px;
+    border-radius: 4px;
+    background-color: transparent;
+    display: inline-flex;
+}
+
+.label-span {
+    text-align: center;
+    width: 16px;
+    height: 16px;
+}
+
+.check-icon {
+    fill: transparent;
+}
+
+.img-form-position,
+.img-form-position-desk {
+    display: none;
+}
+
+.order {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal-input {
+    width: 100%;
+    border-radius: 100px;
+    border: 1px solid rgba(20, 20, 20, 0.30);
+    height: 46px;
+    padding: 14px 24px;
+    color: rgba(20, 20, 20, 0.50);
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:is(:hover, :focus){
+    border-color: var(--main-button-color);
+}
+
+.submit-btn {
+    border-radius: 100px;
+    background-color: var(--main-button-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    color: var(--main-background-color);
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.56px;
+    border: none;
+    padding: 12px 24px;
+    max-width: 92px;
+    height: 42px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn:is(:hover, :focus){
+        background-color: var(--first-background-color);
+}
+
+.modal-textarea {
+    height: 132px;
+    border-radius: 20px;
+    resize: none;
+}
+
+
+
+/* --------------media screen and (max-width:428px----------------------- */
+
+
+@media screen and (min-width:768px) {
+    .section-form .container {
+        margin: 0;
+    }
+
+    .container-form {
+        max-width: 704px;
+        position: relative;
+        max-height: 853px;
+
+    }
+
+    .section-form {
+        height: 100%;
+
+    }
+
+    .title-form {
+        text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.10);
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: -1.6px;
+        text-transform: uppercase;
+
+    }
+
+    .form-list {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .form-list-item {
+        width: calc((100% - 24px) / 3);
+        height: fit-content;
+        padding-left: 14px;
+        padding-bottom: 14px;
+        padding-right: 14px;
+    }
+
+    .img-plant {
+        position: static;
+        width: 172px;
+        height: 142px;
+        margin: 0 auto;
+
+    }
+
+    .label-span {
+        width: 20px;
+        height: 20px;
+    }
+
+    .modal-input {
+        height: 48px;
+        padding: 15px 24px;
+
+    }
+
+    .submit-btn {
+        padding: 15px 35px;
+    }
+
+    .modal-textarea {
+        height: 145px;
+        resize: none;
+    }
+
+    .modal-input {
+        max-width: 360px;
+    }
+
+    .img-form-position {
+        position: absolute;
+        right: 0;
+        display: block;
+    }
+
+
+
+}
+
+@media screen and (min-width:1280px) {
+    .section-form .container {
+        margin: 0;
+    }
+
+    .container-form {
+        max-width: 891px;
+        position: relative;
+        max-height: 911px;
+
+    }
+
+    .form-list-item {
+        width: calc((100% - 40px) / 3);
+    }
+
+    .img-form-position {
+        display: none;
+    }
+
+    .img-form-position-desk {
+        display: block;
+        position: absolute;
+        bottom: -37;
+        right: 0;
+    }
+}
